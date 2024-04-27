@@ -1,4 +1,4 @@
-# Portfolio Basic
+# Portfolio Basico
 
 ## Sobre o Projeto
  Projeto desenvolvido para testar as habilidades em desenvolvimento Front-End e com o objetivo de desenvolver um portfólio de projetos. Além de testar habilidades com o Git, Github, hospedagem de sites e deploy.
