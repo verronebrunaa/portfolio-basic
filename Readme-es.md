@@ -1,5 +1,19 @@
 # Cartera Básica
 
+<table>
+    <td height="40px">
+      <b>
+        <a href="Readme.md">PT-BR 🇧🇷</a>
+      </b>
+    </td>
+    <td height="40px">
+      <a href="readme-en.md">EN 🇺🇸</a>
+    </td>
+    <td height="40px">
+      <a href="readme-es.md">ES 🇪🇸</a>
+    </td>
+</table>
+
 ## Sobre el proyecto 
 Proyecto diseñado para poner a prueba las habilidades en el desarrollo Front-End y con el objetivo de desarrollar una cartera de proyectos. Además de probar habilidades con Git, Github, alojamiento y despliegue de sitios web.
 

@@ -1,5 +1,19 @@
 # Portfolio Basico
 
+<table>
+    <td height="40px">
+      <b>
+        <a href="Readme.md">PT-BR 🇧🇷</a>
+      </b>
+    </td>
+    <td height="40px">
+      <a href="readme-en.md">EN 🇺🇸</a>
+    </td>
+    <td height="40px">
+      <a href="readme-es.md">ES 🇪🇸</a>
+    </td>
+</table>
+
 ## Sobre o Projeto
  Projeto desenvolvido para testar as habilidades em desenvolvimento Front-End e com o objetivo de desenvolver um portfólio de projetos. Além de testar habilidades com o Git, Github, hospedagem de sites e deploy.
  
