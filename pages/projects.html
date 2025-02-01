@@ -1,51 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      name="description"
+      content="Projetos de Bruna Verrone, Front End Developer"
+      name="author"
+      content="Bruna Verrone"
+    />
 
-<head>
-    <title>Bruna Verrone - Developer Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projetos - Bruna Verrone</title>
+
     <link href="styles/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="bg">
-        <header class="header">
-            <div>
-                <h1 class="font">Bruna Verrone</h1>
-                <h2 class="font">Front End Developer</h2>
-            </div>
-        </header>
-
-        <nav class="nav">
-            <div>
-                <a href="index.html" class="nav-button font">Página Inicial</a>
-            </div>
-            <div><a href="contact.html" class="nav-button font">Contato</a></div>
-            <div><a href="projects.html" class="nav-button font">Projetos</a></div>
-            <div>
-                <a href="https://www.canva.com/design/DAE356cb_o8/se4kkDzKOF1p-EMTKF2mjA/view?utm_content=DAE356cb_o8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                    class="nav-button font">Currículo</a>
-            </div>
-        </nav>
-
-        <div class="w3-row-padding w3-grayscale" style="margin-bottom: 128px">
-            <div class="bottom">
-                <a href="https://blogpessoal-bookgram-r0aka50hp-verronebruna.vercel.app/">Bookgram [Blog Pessoal]</a>
-            </div>
-
-            <div class="bottom">
-                <a href="https://verronebrunaa.github.io/Mario-Jump-Game/">Mario Jump [Game]</a>
-            </div>
-
-            <footer class="footer">
-                <a href="https://www.linkedin.com/in/verronebruna/" class="fa fa-linkedin"></a>
-                <a href="https://www.github.com/verronebrunaa" class="fa fa-github"></a>
-                <a href="https://www.instagram.com/verronebru" class="fa fa-instagram"></a>
-                <br />
-                <p class="font"> © Bruna Verrone's Website 2024. </p>
-            </footer>
+      <header class="header">
+        <div>
+          <h1 class="font">Bruna Verrone</h1>
+          <h2 class="font">Front End Developer</h2>
         </div>
-</body>
+      </header>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-button font">Página Inicial</a>
+          </li>
+          <li>
+            <a href="pages/contact.html" class="nav-button font">Contato</a>
+          </li>
+          <li>
+            <a href="pages/projects.html" class="nav-button font">Projetos</a>
+          </li>
+          <li>
+            <a
+              href="https://www.canva.com/design/DAE356cb_o8/se4kkDzKOF1p-EMTKF2mjA/view?utm_content=DAE356cb_o8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              class="nav-button font"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Currículo</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section class="projects">
+        <h3 class="font">Meus Projetos</h3>
+        <p class="font">
+          Aqui estão alguns dos projetos em que trabalhei. Clique para conferir
+          mais detalhes ou acessar o link direto!
+        </p>
+
+        <div class="project-list">
+          <div class="project-item">
+            <h4 class="font">Bookgram [Blog Pessoal]</h4>
+            <p class="font">
+              Este é meu blog pessoal onde compartilho livros, resenhas e
+              reflexões sobre literatura. Desenvolvido com HTML, CSS e
+              JavaScript.
+            </p>
+            <a
+              href="https://blogpessoal-bookgram-r0aka50hp-verronebruna.vercel.app/"
+              target="_blank"
+              class="project-link"
+              >Acessar Projeto</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h4 class="font">Mario Jump [Jogo]</h4>
+            <p class="font">
+              Este é um jogo simples desenvolvido com JavaScript, onde o
+              objetivo é pular os obstáculos e alcançar a maior pontuação
+              possível.
+            </p>
+            <a
+              href="https://verronebrunaa.github.io/Mario-Jump-Game/"
+              target="_blank"
+              class="project-link"
+              >Acessar Jogo</a
+            >
+          </div>
+
+          <div class="project-item">
+            <h4 class="font">Projeto 3</h4>
+            <p class="font">Descrição do projeto 3...</p>
+            <a href="#" target="_blank" class="project-link">Acessar Projeto</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/verronebruna/"
+            class="fa fa-linkedin"
+            aria-label="Perfil LinkedIn"
+          >
+          </a>
+          <a
+            href="https://www.github.com/verronebrunaa"
+            class="fa fa-github"
+            aria-label="Perfil GitHub"
+          ></a>
+          <a
+            href="https://www.instagram.com/verronebru"
+            class="fa fa-instagram"
+            aria-label="Perfil Instagram"
+          ></a>
+        </div>
+        <p class="font">
+          © Bruna Verrone's Website <span id="current-year"></span>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

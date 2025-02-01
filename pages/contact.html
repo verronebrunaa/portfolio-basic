@@ -1,68 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      name="description"
+      content="Contato com Bruna Verrone, Front End Developer"
+      name="author"
+      content="Bruna Verrone"
+    />
 
-<head>
-    <title>Bruna Verrone - Developer Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato - Bruna Verrone</title>
+
     <link href="styles/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="bg">
-        <header class="header">
-            <div>
-                <h1 class="font">Bruna Verrone</h1>
-                <h2 class="font">Front End Developer</h2>
-            </div>
-        </header>
-
-        <nav class="nav">
-            <div>
-                <a href="index.html" class="nav-button font">Página Inicial</a>
-            </div>
-            <div><a href="contact.html" class="nav-button font">Contato</a></div>
-            <div><a href="projects.html" class="nav-button font">Projetos</a></div>
-            <div><a href="https://www.canva.com/design/DAE356cb_o8/se4kkDzKOF1p-EMTKF2mjA/view?utm_content=DAE356cb_o8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-                    class="nav-button font">Currículo</a></div>
-        </nav>
-
-
-        <div class="form">
-            <h3 class="font"> Entre em contato comigo! </h3>
-
-            <form>
-                <label class="font" for="nome">Nome:</label> <br>
-                <input class="font" type="text" id="nome" onkeyup="validaNome()">
-                <div id="txtNome">
-                </div>
-                <br>
-                <label class="font" for="email">E-mail:</label> <br>
-                <input class="font" type="email" id="email" onkeyup="validaEmail()">
-                <div id="txtEmail">
-                </div>
-                <br>
-                <label class="font" for="assunto">Assunto:</label> <br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
-                <div id="txtAssunto">
-                </div>
-                <br>
-                <button class="bottom" onclick="enviar()">Enviar</button>
-            </form>
+      <header class="header">
+        <div>
+          <h1 class="font">Bruna Verrone</h1>
+          <h2 class="font">Front End Developer</h2>
         </div>
-        <br />
+      </header>
 
-        <footer class="footer">
-            <a href="https://www.linkedin.com/in/verronebruna/" class="fa fa-linkedin"></a>
-            <a href="https://www.github.com/verronebrunaa" class="fa fa-github"></a>
-            <a href="https://www.instagram.com/verronebru" class="fa fa-instagram"></a>
-            <br />
-            <p class="font"> © Bruna Verrone's Website 2024. </p>
-        </footer>
-        <script src="./js/script.js"></script>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html" class="nav-button font">Página Inicial</a>
+          </li>
+          <li>
+            <a href="pages/contact.html" class="nav-button font">Contato</a>
+          </li>
+          <li>
+            <a href="pages/projects.html" class="nav-button font">Projetos</a>
+          </li>
+          <li>
+            <a
+              href="https://www.canva.com/design/DAE356cb_o8/se4kkDzKOF1p-EMTKF2mjA/view?utm_content=DAE356cb_o8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+              class="nav-button font"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Currículo</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-</body>
+      <div class="form">
+        <h3 class="font">Entre em contato comigo!</h3>
 
+        <form id="contact-form">
+          <label class="font" for="nome">Nome:</label> <br />
+          <input
+            class="font"
+            type="text"
+            id="nome"
+            name="nome"
+            onkeyup="validName()"
+          />
+          <div id="txtNome" role="alert"></div>
+          <br />
+
+          <label class="font" for="email">E-mail:</label> <br />
+          <input
+            class="font"
+            type="email"
+            id="email"
+            name="email"
+            onkeyup="validEmail()"
+          />
+          <div id="txtEmail" role="alert"></div>
+          <br />
+
+          <label class="font" for="assunto">Assunto:</label> <br />
+          <textarea
+            name="assunto"
+            id="assunto"
+            cols="60"
+            rows="5"
+            onkeyup="validAssunto()"
+          ></textarea>
+          <div id="txtAssunto" role="alert"></div>
+          <br />
+
+          <button type="submit" class="bottom">Enviar</button>
+        </form>
+      </div>
+
+      <footer class="footer">
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/verronebruna/"
+            class="fa fa-linkedin"
+            aria-label="Perfil LinkedIn"
+          >
+          </a>
+          <a
+            href="https://www.github.com/verronebrunaa"
+            class="fa fa-github"
+            aria-label="Perfil GitHub"
+          ></a>
+          <a
+            href="https://www.instagram.com/verronebru"
+            class="fa fa-instagram"
+            aria-label="Perfil Instagram"
+          ></a>
+        </div>
+        <p class="font">
+          © Bruna Verrone's Website <span id="current-year"></span>.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
